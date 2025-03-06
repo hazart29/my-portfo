@@ -10,6 +10,13 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-signature: 'WhisperingSignature', 'sans-serif';
+}
+
+@font-face {
+  font-family: 'WhisperingSignature';
+  src: url('/fonts/WhisperingSignature.ttf') format('truetype');
+  font-display: swap;
 }
 
 @media (prefers-color-scheme: dark) {
