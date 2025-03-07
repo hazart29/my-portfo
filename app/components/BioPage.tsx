@@ -1,5 +1,5 @@
 
-export default function LandingPage() {
+export default function BioPage() {
     return (
         <div className="flex flex-1 my-4 mx-40 p-4 justify-between gap-20 outline-1">
             asas
