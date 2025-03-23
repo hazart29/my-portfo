@@ -1,9 +1,13 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import { Linkedin, Github, Facebook } from 'lucide-react';
 import Image from 'next/image';
-import Button from './buttons/Button';
+import Button from './ui/Button';
+import EmailModal from './ui/EmailModal'; // Import EmailModal
 
 const MainContent: React.FC = () => {
+  const [isModalVisible, setIsModalVisible] = useState(false); // State untuk modal
+
   return (
     <main className="flex-grow flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col md:flex-row items-center gap-12 w-full max-w-6xl">
@@ -31,6 +35,7 @@ const MainContent: React.FC = () => {
               variant="outline"
               size="lg"
               className="text-white border-gray-500 hover:bg-white/10 hover:border-white"
+              onClick={() => setIsModalVisible(true)} // Buka modal saat diklik
             >
               Hire Me
             </Button>
@@ -49,7 +54,8 @@ const MainContent: React.FC = () => {
         </div>
 
         {/* Bagian Foto */}
-        <div className="flex-none w-1/3 flex relative justify-start items-center pl-4">
+        <div className="flex-none w-1/3 h-auto flex relative justify-end items-center pl-4">
+          <div className='absolute bg-pattern-line w-72 h-72 rotate-45'></div>
           <Image
             src="/images/me/me.png"
             alt="Misbakhul Munir"
@@ -59,6 +65,11 @@ const MainContent: React.FC = () => {
           />
         </div>
       </div>
+        <EmailModal
+            isVisible={isModalVisible}
+            onClose={() => setIsModalVisible(false)}
+            toEmail="misbakhul2904@gmail.com" // Ganti dengan email Anda
+        />
     </main>
   );
 };
