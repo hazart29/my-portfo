@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { XCircle, Mail, Send, AlertTriangle } from 'lucide-react';
+import { Mail, Send, AlertTriangle } from 'lucide-react';
 import { Input, Textarea } from './Input';
 import Button from './Button';
 
@@ -71,10 +71,6 @@ const EmailModal: React.FC<EmailModalProps> = ({ isVisible, onClose, toEmail = '
                                 <Mail className="w-5 h-5 text-blue-500" />
                                 Hire Misbakhul!
                             </h2>
-                            <Button variant='outline' onClick={onClose} className="text-white hover:text-white rounded-md bg-red-400 hover:bg-red-500">
-                                <XCircle className="w-5 h-5" />
-                                <span className="sr-only">Close</span>
-                            </Button>
                         </div>
 
                         <Input
