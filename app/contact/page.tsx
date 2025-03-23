@@ -9,9 +9,9 @@ const ContactPage = () => {
                     Jika Anda memiliki pertanyaan, saran, atau ingin berdiskusi tentang proyek potensial, jangan ragu untuk menghubungi kami melalui informasi di bawah ini:
                 </p>
                 <ul className="flex-1 list-di   sc list-inside mb-4">
-                    <li>Email: contoh@email.com</li>
-                    <li>Telepon: +1234567890</li>
-                    <li>Alamat: Jalan Contoh No. 123, Kota Contoh</li>
+                    <li>Email: misbakhul2904@gmail.com</li>
+                    <li>Telepon: +6282008718112</li>
+                    <li>Alamat: RT. 01, RW. 01, Desa Dukuhrejosari, Kec. Ambal, Kab. Kebumen, Jawa Tengah</li>
                 </ul>
                 <p className='flex-1 '>
                     Anda juga dapat mengisi formulir di bawah ini dan kami akan segera menghubungi Anda.
