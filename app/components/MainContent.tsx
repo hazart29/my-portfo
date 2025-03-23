@@ -4,6 +4,7 @@ import { Linkedin, Github, Facebook } from 'lucide-react';
 import Image from 'next/image';
 import Button from './ui/Button';
 import EmailModal from './ui/EmailModal'; // Import EmailModal
+import Link from 'next/link';
 
 const MainContent: React.FC = () => {
   const [isModalVisible, setIsModalVisible] = useState(false); // State untuk modal
@@ -24,13 +25,14 @@ const MainContent: React.FC = () => {
             beautifully functional digital experiences.
           </p>
           <div className="flex justify-center md:justify-start space-x-4">
-            <Button
-              variant="default"
-              size="lg"
-              className="bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:from-purple-600 hover:to-blue-600"
+            <Link
+              href="https://github.com/hazart29"
+              className="bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:from-purple-600 hover:to-blue-600 py-2 px-4 rounded transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Projects
-            </Button>
+            </Link>
             <Button
               variant="outline"
               size="lg"
@@ -65,11 +67,11 @@ const MainContent: React.FC = () => {
           />
         </div>
       </div>
-        <EmailModal
-            isVisible={isModalVisible}
-            onClose={() => setIsModalVisible(false)}
-            toEmail="misbakhul2904@gmail.com" // Ganti dengan email Anda
-        />
+      <EmailModal
+        isVisible={isModalVisible}
+        onClose={() => setIsModalVisible(false)}
+        toEmail="misbakhul2904@gmail.com" // Ganti dengan email Anda
+      />
     </main>
   );
 };

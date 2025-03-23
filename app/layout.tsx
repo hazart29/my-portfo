@@ -33,7 +33,6 @@ export default function RootLayout({
 
         <div className="bg-gradient-to-br from-gray-800 via-gray-900 to-green-900 min-h-screen flex flex-col">
           <DevelopmentAlert />
-
           <Header />
           {children}
           <Footer />
