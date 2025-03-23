@@ -26,7 +26,7 @@ const MainContent: React.FC = () => {
           </p>
           <div className="flex justify-center md:justify-start space-x-4">
             <Link
-              href="https://github.com/hazart29"
+              href="https://vdress.vercel.app/"
               className="bg-gradient-to-r from-purple-500 to-blue-500 text-white hover:from-purple-600 hover:to-blue-600 py-2 px-4 rounded transition-colors"
               target="_blank"
               rel="noopener noreferrer"
@@ -43,13 +43,13 @@ const MainContent: React.FC = () => {
             </Button>
           </div>
           <div className="flex justify-center md:justify-start space-x-4">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://web.facebook.com/Misbakhul29" target='_blank' className="text-gray-400 hover:text-white transition-colors">
               <Facebook className="w-6 h-6" />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://www.linkedin.com/in/misbakhul-munir-787794233/" target='_blank' className="text-gray-400 hover:text-white transition-colors">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <a href="https://github.com/hazart29" target='_blank' className="text-gray-400 hover:text-white transition-colors">
               <Github className="w-6 h-6" />
             </a>
           </div>
