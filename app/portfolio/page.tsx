@@ -4,10 +4,10 @@ import Image from 'next/image';
 const Portfolio: NextPage = () => {
   const projects = [
     {
-      title: 'Proyek 1',
-      description: 'Deskripsi proyek 1.',
-      imageUrl: '/images/project1.png',
-      link: 'https://proyek1.com',
+      title: 'Virtual Dressing',
+      description: 'Permainan Web tentang fashion dengan fitur gacha di dalamnya.',
+      imageUrl: '/images/porto/vdress.png',
+      link: 'https://vdress.vercel.app',
     },
     {
       title: 'Proyek 2',
@@ -47,7 +47,7 @@ const Portfolio: NextPage = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded"
+                className="bg-green-500 hover:bg-green-600 text-white text-xs font-semibold py-2 px-4 rounded"
               >
                 Kunjungi Situs
               </a>

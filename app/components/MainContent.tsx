@@ -20,9 +20,9 @@ const MainContent: React.FC = () => {
           </h1>
           <h2 className="text-2xl sm:text-3xl font-semibold text-gray-200">Frontend WEB Developer</h2>
           <p className="text-gray-400 max-w-2xl mx-auto md:mx-0">
-            I&apos;m a passionate and creative web developer dedicated to crafting visually stunning and user-friendly websites.
-            With a keen eye for design and a deep understanding of modern web development, I transform ideas into
-            beautifully functional digital experiences.
+            Saya seorang pengembang web yang penuh semangat dan kreatif, berdedikasi untuk menciptakan situs web yang memukau secara visual dan ramah pengguna.
+            Dengan mata yang tajam untuk desain dan pemahaman yang mendalam tentang pengembangan web modern, saya mengubah ide menjadi
+            pengalaman digital yang fungsional dan indah.
           </p>
           <div className="flex justify-center md:justify-start space-x-4">
             <Link
@@ -56,7 +56,7 @@ const MainContent: React.FC = () => {
         </div>
 
         {/* Bagian Foto */}
-        <div className="flex-none w-1/3 h-auto flex relative justify-center items-center pl-4">
+        <div className="flex-none w-1/3 h-auto flex relative justify-start items-center pl-4">
           <div className='absolute bg-pattern-line w-72 h-72 rotate-45'></div>
           <Image
             src="/images/me/me.png"

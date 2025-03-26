@@ -33,7 +33,7 @@ export default function RootLayout({
         <div className="bg-gradient-to-br from-gray-800 via-gray-900 to-green-900 min-h-screen flex flex-col px-8">
           <DevelopmentAlert />
           <Header />
-          <main className="container rounded-md flex-grow flex items-center justify-center px-12">
+          <main className="container rounded-md flex-grow flex items-center justify-center px-20">
             {children}
           </main>
           <Footer />
