@@ -10,8 +10,8 @@ const MainContent: React.FC = () => {
   const [isModalVisible, setIsModalVisible] = useState(false); // State untuk modal
 
   return (
-    <main className="flex-grow flex items-center justify-center px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col md:flex-row items-center gap-12 w-full max-w-6xl">
+    <main className="flex-grow flex items-center justify-center">
+      <div className="flex flex-col md:flex-row items-center gap-12 w-full">
 
         {/* Bagian Teks (Moved to be first on mobile) */}
         <div className="flex-1 text-center md:text-left space-y-6">
@@ -56,7 +56,7 @@ const MainContent: React.FC = () => {
         </div>
 
         {/* Bagian Foto */}
-        <div className="flex-none w-1/3 h-auto flex relative justify-end items-center pl-4">
+        <div className="flex-none w-1/3 h-auto flex relative justify-center items-center pl-4">
           <div className='absolute bg-pattern-line w-72 h-72 rotate-45'></div>
           <Image
             src="/images/me/me.png"

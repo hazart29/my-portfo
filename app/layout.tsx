@@ -28,12 +28,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden min-h-screen bg-gray-800`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden max-h-screen bg-gray-800`}
       >
-        <div className="bg-gradient-to-br from-gray-800 via-gray-900 to-green-900 min-h-screen flex flex-col">
+        <div className="bg-gradient-to-br from-gray-800 via-gray-900 to-green-900 min-h-screen flex flex-col px-8">
           <DevelopmentAlert />
           <Header />
-          {children}
+          <main className="container rounded-md flex-grow flex items-center justify-center px-12">
+            {children}
+          </main>
           <Footer />
         </div>
       </body>
