@@ -5,23 +5,34 @@ const Portfolio: NextPage = () => {
   const projects = [
     {
       title: 'Virtual Dressing',
-      description: 'Permainan Web tentang fashion dengan fitur gacha di dalamnya.',
+      description: 'Permainan web tentang fashion dengan fitur gacha Genshin Impact di dalamnya.',
       imageUrl: '/images/porto/vdress.png',
       link: 'https://vdress.vercel.app',
     },
     {
-      title: 'Proyek 2',
-      description: 'Deskripsi proyek 2.',
-      imageUrl: '/images/project2.png',
-      link: 'https://proyek2.com',
+      title: 'Virtual Dressing v2',
+      description: 'Permainan web tentang fashion dengan fitur gacha Tower of Fantasy di dalamnya.',
+      imageUrl: '/images/porto/vdress2.png',
+      link: 'https://vdress2.vercel.app',
     },
     {
-      title: 'Proyek 3',
-      description: 'Deskripsi proyek 3.',
-      imageUrl: '/images/project3.png',
-      link: 'https://proyek3.com',
+      title: 'Birthday Checker',
+      description: 'Aplikasi web untuk mengecek hari ulang tahunmu.',
+      imageUrl: '/images/porto/birthday.png',
+      link: 'https://birthdayweb-ivory.vercel.app/',
     },
-    // Tambahkan proyek lain di sini
+    {
+      title: 'XDRT Landing Page',
+      description: 'Landing page untuk crypto currency XDR Team.',
+      imageUrl: '/images/porto/xdrtweb.png',
+      link: 'https://xdrtweb.vercel.app/',
+    },
+    {
+      title: 'PKL Project',
+      description: 'Redesain aplikasi satria milik pemerintah.',
+      imageUrl: '/images/porto/satria.png',
+      link: 'https://hazart29.github.io/prototypesatria/',
+    },
   ];
 
   return (
