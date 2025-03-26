@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import DevelopmentAlert from "./components/alert/DevelopmentAlert";
 import MyStatsig from "./my-statsig";
+import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
       >
         <div aria-hidden className="bg-gradient-to-br from-gray-800 via-gray-900 to-green-900 min-h-screen flex flex-col px-8">
           <DevelopmentAlert />
+          <Analytics/>
           <Header />
           <main className="container rounded-md flex-grow flex items-center justify-center px-20">
             <MyStatsig>
