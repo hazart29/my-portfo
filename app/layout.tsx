@@ -36,7 +36,7 @@ export default function RootLayout({
           <DevelopmentAlert />
           <Analytics/>
           <Header />
-          <main className="container rounded-md flex-grow flex items-center justify-center px-20">
+          <main className="container rounded-md flex-grow flex items-center justify-center md:px-20 px-2">
             <MyStatsig>
               {children}
             </MyStatsig>

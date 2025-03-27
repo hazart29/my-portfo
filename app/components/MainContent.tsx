@@ -13,6 +13,17 @@ const MainContent: React.FC = () => {
     <main className="flex-grow flex items-center justify-center">
       <div className="flex flex-col md:flex-row items-center gap-12 w-full">
 
+        {/* Bagian Foto */}
+        <div className="w-1/2 h-auto md:hidden flex relative justify-start items-center md:pl-4 pl-0">
+          <Image
+            src="/images/me/me.png"
+            alt="Misbakhul Munir"
+            width={300}
+            height={300}
+            className="transition-transform bg-pattern-line rounded-full hover:scale-105 object-cover"
+          />
+        </div>
+
         {/* Bagian Teks (Moved to be first on mobile) */}
         <div className="flex-1 text-center md:text-left space-y-6">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-lime-400 to-emerald-600">
@@ -56,7 +67,7 @@ const MainContent: React.FC = () => {
         </div>
 
         {/* Bagian Foto */}
-        <div className="flex-none w-1/3 h-auto flex relative justify-start items-center pl-4">
+        <div className="flex-none w-1/3 h-auto hidden md:flex relative justify-start items-center md:pl-4 pl-0">
           <div className='absolute bg-pattern-line w-72 h-72 rotate-45'></div>
           <Image
             src="/images/me/me.png"
