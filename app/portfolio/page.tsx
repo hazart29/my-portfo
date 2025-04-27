@@ -4,6 +4,12 @@ import Image from 'next/image';
 const Portfolio: NextPage = () => {
   const projects = [
     {
+      title: 'Taabook',
+      description: 'Facebook clone built with Next.js and Tailwind CSS',
+      imageUrl: '/images/porto/taabook.png',
+      link: 'https://taabook.vercel.app',
+    },
+    {
       title: 'Virtual Dressing',
       description: 'Permainan web tentang fashion dengan fitur gacha Genshin Impact di dalamnya.',
       imageUrl: '/images/porto/vdress.png',
